@@ -1,26 +1,35 @@
 # CurvPy
-It's a powerful regression analysis software with a lot of functionalities.
 
+CurvPy is a powerful data analysis tool that allows you to fit curves to your data in CSV format. It consists of three main functionalities:
 
-# CurvPy
+## DataSleuth: Guess the Function
 
-CurvPy is a curve fitting tool that allows users to easily fit curves to their data. It provides a user-friendly interface and powerful algorithms for accurate curve fitting.
+In this module, you can input your data, and CurvPy will analyze it to provide a best-guess estimate of the underlying mathematical function that describes your data.
 
-## Features
+## FuncPlot: Test the Function
 
-- **Interactive Plotting**: Visualize your data and the fitted curves in real-time with an interactive plot.
-- **Multiple Curve Models**: Choose from a variety of curve models to fit your data, such as linear, polynomial, exponential, and more.
-- **Automatic Curve Fitting**: Let CurvPy automatically determine the best-fit curve for your data using advanced fitting algorithms.
-- **Customization Options**: Adjust various parameters, such as curve degree, initial guess, and convergence criteria, to customize the fitting process.
-- **Export and Save**: Save your fitted curves as image files or export the data to CSV format for further analysis.
+Once you have a guess about the function, you can input the mathematical expression, and FuncPlot will generate a graph for you to visually inspect the fit between the function and your data.
+
+## OptiFit: Optimize Parameters
+
+Harness the Power of Optimal Parameters - Effortlessly optimize equation parameters to unlock precise and efficient data modeling.
 
 ## Installation
 
 To use CurvPy, you need to have Python and the following dependencies installed:
 
-- [NumPy](https://numpy.org)
-- [Matplotlib](https://matplotlib.org)
-- [SciPy](https://scipy.org)
+- Flask==2.0.1
+- pandas
+- numpy
+- matplotlib
+- scipy
+- scikit-learn
+
+You can install the required dependencies using pip:
+
+```shell
+pip install -r requirements.txt
+
 
 You can install the required dependencies using pip:
 
