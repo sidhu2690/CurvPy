@@ -17,21 +17,21 @@ Harness the Power of Optimal Parameters - Effortlessly optimize equation paramet
 ## Installation
 
 To use CurvPy, you need to have Python and the following dependencies installed:
-
-- Flask==2.0.1
+- pip
+- Flask
 - pandas
-- numpy
+- NumPy
 - matplotlib
 - scipy
 - scikit-learn
 
+#For Linux users
 You can install the required dependencies using pip:
 
 ```shell
 pip install -r requirements.txt
+```
+
+- For Linux-based systems, you may need to use pip3 instead of pip.
 
 
-You can install the required dependencies using pip:
-
-```shell
-pip install numpy matplotlib scipy
