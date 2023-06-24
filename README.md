@@ -24,8 +24,7 @@ To use CurvPy, you need to have Python and the following dependencies installed:
 - matplotlib
 - scipy
 - scikit-learn
-
-##For linux users
+## For Linux users
 You can install the required dependencies using pip:
 
 ```shell
