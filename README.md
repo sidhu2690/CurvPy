@@ -39,15 +39,35 @@ pip install -r requirements.txt
 ```shell
 git clone https://github.com/your-username/CurvPy.git
 ```
-Or you can download it from this page itself.
-
+Note for Windows Users: If you are using a Windows machine, download the project as a ZIP file from the GitHub repository. Extract the ZIP file to a location of your choice and open the command prompt or PowerShell. Navigate to the extracted directory using the cd command and list the files using the dir command. Here's an example:
+```shell
+cd C:\path\to\CurvPy
+dir
+```
 2. Navigate to the project directory:
 ```shell
 cd CurvPy
 ```
-3.Install the required dependencies:
+3. Install the required dependencies:
 ```shell
 pip install -r requirements.txt
 ```
+For Linux-based systems, use pip3 instead of pip.
+
+4. Launch CurvPy:
+```shell
+python app.py
+```
+5.Open your web browser and paste the following URL:
+```shell
+http://localhost:5000
+```
+6.Start using CurvPy by selecting one of the three main functionalities: DataSleuth, FuncPlot, or OptiFit.
+
+## Screenshots
+![Screenshot 2023-06-24 153541](https://github.com/sidhu2690/CurvPy/assets/136654152/f43a91d2-295c-4b35-ab7e-119ffaac3d8e)
+
+
+
 
 
