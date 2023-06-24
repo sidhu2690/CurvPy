@@ -14,7 +14,7 @@ Once you have a guess about the function, you can input the mathematical express
 
 Harness the Power of Optimal Parameters - Effortlessly optimize equation parameters to unlock precise and efficient data modeling.
 
-## Installation
+## Installation 
 
 To use CurvPy, you need to have Python and the following dependencies installed:
 - pip
@@ -25,7 +25,7 @@ To use CurvPy, you need to have Python and the following dependencies installed:
 - scipy
 - scikit-learn
 
-#For Linux users
+##For linux users
 You can install the required dependencies using pip:
 
 ```shell
