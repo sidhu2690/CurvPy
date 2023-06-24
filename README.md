@@ -24,13 +24,30 @@ To use CurvPy, you need to have Python and the following dependencies installed:
 - matplotlib
 - scipy
 - scikit-learn
-## For Linux users
+
 You can install the required dependencies using pip:
 
 ```shell
 pip install -r requirements.txt
 ```
 
+- Otherwise, you can individually install all these packages.
 - For Linux-based systems, you may need to use pip3 instead of pip.
+
+## Usage
+1. Clone the repository:
+```shell
+git clone https://github.com/your-username/CurvPy.git
+```
+Or you can download it from this page itself.
+
+2. Navigate to the project directory:
+```shell
+cd CurvPy
+```
+3.Install the required dependencies:
+```shell
+pip install -r requirements.txt
+```
 
 
