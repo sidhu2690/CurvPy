@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Data Analysis Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .title {
+            background-color: #007bff;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+        p {
+            text-align: justify;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .instruction-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            background-image: url('path_to_your_mailbox_icon');
+            background-size: cover;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .instruction-window {
+            width: 400px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="title">CurvPy</div>
+    <div class="container">
+        <h1>The Data Analysis Tool</h1>
+        <p>
+            CurvPy is a powerful data analysis tool that allows you to fit curves to your data in CSV format. It consists of three main functionalities:
+        </p>
+        <ul>
+            <li>
+                <strong>DataSleuth:</strong> Guess the Function
+                <br>
+                In this module, you can input your data and CurvPy will analyze it to provide a best-guess estimate of the underlying mathematical function that describes your data.
+            </li>
+            <li>
+                <strong>FuncPlot:</strong> Test the Function
+                <br>
+                Once you have a guess about the function, you can input the mathematical expression and FuncPlot will generate a graph for you to visually inspect the fit between the function and your data.
+            </li>
+            <li>
+                <strong>OptiFit:</strong> Optimize parameters
+                <br>
+                Harness the Power of Optimal Parameters - Effortlessly optimize equation parameters to unlock precise and efficient data modeling
+            </li>
+        </ul>
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='/file1'">DataSleuth</button>
+            <button class="button" onclick="window.location.href='/file2'">FuncPlot</button>
+            <button class="button" onclick="window.location.href='/file3'">OptiFit</button>
+        </div>
+        <button class="instruction-button" onclick="showInstructions()"></button>
+    </div>
+    <canvas id="animatedCanvas"></canvas>
+
+    <script>
+        // Animated Wallpaper
+        var canvas = document.getElementById('animatedCanvas');
+        var ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        var numbers = [];
+        for (var i = 0; i < 100; i++) {
+            numbers.push(Math.random());
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            numbers.forEach(function (number, index) {
+                var x = Math.random() * canvas.width;
+                var y = Math.random() * canvas.height;
+
+                ctx.fillStyle = 'rgba(0, 123, 255, ' + number + ')';
+                ctx.font = '16px Arial';
+                ctx.fillText(index, x, y);
+            });
+
+            // Adjust the delay (in milliseconds) to control the animation speed
+            setTimeout(animate, 100);
+        }
+
+        animate();
+
+        // Function to show instructions
+        function showInstructions() {
+            var instructionWindow = window.open('', '_blank', 'width=400,height=300');
+
+            var instructions = "You can input data as CSV files. In a CSV file, the first row should be the labels.";
+
+            var instructionContent = "<div class='instruction-window'>" +
+                                        "<h2>Instructions</h2>" +
+                                        "<p>" + instructions + "</p>" +
+                                        "<p>If you encounter any issues, please contact us at: <a href='mailto:sidhuser2690@gmail.com'>sidhuser2690@gmail.com</a></p>" +
+                                    "</div>";
+
+            instructionWindow.document.write(instructionContent);
+            instructionWindow.document.close();
+        }
+    </script>
+</body>
+</html>
